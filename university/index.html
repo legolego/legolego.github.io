@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825899651043">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825907108828">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -33,11 +33,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.1.0.825899651043" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.825907108828" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825899651043" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825907108828" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825899651043" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825907108828" data-turbo-eval="false" defer></script>
 
     <link href="static/custom.css" rel="stylesheet" />
 </head>
@@ -158,10 +158,10 @@
 </figure>
 This MIDAS initiative tackled a critical urban challenge: mapping digital access gaps in Detroit. Using demographic and infrastructure data, we identified neighborhoods most vulnerable to the &quot;digital divide.&quot; This is essential for effective policy decisions around broadband expansion.</p>
 <hr>
-<doc-anchor-target id="capstone-weather--urban-mobility-analysis">
+<doc-anchor-target id="capstone-finding-the-next-big-thing">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#capstone-weather--urban-mobility-analysis">#</doc-anchor-trigger>
-        <span>Capstone: Weather &amp; Urban Mobility Analysis</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#capstone-finding-the-next-big-thing">#</doc-anchor-trigger>
+        <span>Capstone: Finding the Next Big Thing</span>
     </h2>
 </doc-anchor-target>
 <p><figure class="content-center">
@@ -170,8 +170,8 @@ This MIDAS initiative tackled a critical urban challenge: mapping digital access
     </a>
     <figcaption class="caption"></figcaption>
 </figure>
-Our final project combined NYC taxi trip data with weather information to quantify how rain impacts urban mobility patterns. Using difference-in-differences methodology, we isolated the causal effect of precipitation on ridership and controlled for day-of-week effects and other confounding variables.</p>
-<p>The analysis reveals fascinating behavioral insights: New Yorkers reduce trips significantly in rain but still travel more than usual compared to dry conditions, showing weather-dependent baseline demand shifts. The <a href="https://mads-698-capstone-next-big-thing.streamlit.app" target="_blank">Streamlit app</a> lets you toggle variables and see how different weather conditions reshape the city&#x27;s transportation ecosystem. Full code: <a href="https://github.com/legolego/MADS_698_Capstone" target="_blank">GitHub repository</a>.</p>
+Our final project was a pipeline with the goal of finding the Next Big Thing. Freeform text like &quot;Squid Game&quot; was the input, resulting in finding the next new thing like &quot;Squid Game&quot; that was being talked about on Reddit. Wikipedia and Reddit APIs were used, along with the construction of a Conditional Random Field model to find unseen things, then a Top 10 list was returned.</p>
+<p>Full interactive app and code: <a href="https://mads-698-capstone-next-big-thing.streamlit.app" target="_blank">Streamlit demo</a> | <a href="https://github.com/legolego/MADS_698_Capstone" target="_blank">GitHub repo</a>.</p>
 <hr>
 <doc-anchor-target id="milestone-ii-cryptocurrency-analysis">
     <h2>
@@ -187,8 +187,8 @@ Our final project combined NYC taxi trip data with weather information to quanti
 </figure>
 Course 695 challenged us to combine supervised and unsupervised learning approaches. My project explored cryptocurrency markets from two angles:</p>
 <p><strong>Supervised</strong>: Next-day price prediction using historical patterns (a practical, if ambitious, forecasting exercise).</p>
-<p><strong>Unsupervised</strong>: Discovering &quot;crypto families&quot; - groups of coins whose prices move together. Using dynamic time warping to measure similarity in price trajectories despite different absolute values, then clustering coins into communities with shared behavior.</p>
-<p>The resulting dendrogram reveals interesting market microstructure: smaller altcoins often cluster by ecosystem or use case, while large caps like BTC/ETH form their own clusters. Full interactive app and code: <a href="https://mads-695-milestone2-crypto-prediction.streamlit.app" target="_blank">Streamlit demo</a> | <a href="https://github.com/legolego/MADS695" target="_blank">GitHub repo</a>.</p>
+<p><strong>Unsupervised</strong>: Discovering &quot;crypto families&quot; - groups of coins whose prices move together. Using dynamic time warping to measure similarity in z-scored price trajectories despite different absolute values, then clustering coins into communities with shared behavior.</p>
+<p>The resulting dendrogram reveals interesting market microstructure: smaller altcoins often cluster by ecosystem or use case, while large caps like BTC/ETH form their own independent clusters apart from other large coins. Full interactive app and code: <a href="https://mads-695-milestone2-crypto-prediction.streamlit.app" target="_blank">Streamlit demo</a> | <a href="https://github.com/legolego/MADS695" target="_blank">GitHub repo</a>.</p>
 <hr>
 <doc-anchor-target id="milestone-i-rain--taxi-mobility">
     <h2>
@@ -203,7 +203,7 @@ Course 695 challenged us to combine supervised and unsupervised learning approac
     <figcaption class="caption">Rain effects of taxi rides</figcaption>
 </figure>
 Course 592 introduced us to difference-in-differences (DiD) - a causal inference workhorse in economics and social science. My first DiD application measured how weather affects NYC urban mobility.</p>
-<p>By comparing pre/post rain periods while controlling for time trends, the analysis isolates the causal impact of precipitation on taxi demand. The results show that New Yorkers adapt their travel behavior to weather conditions: fewer trips overall, but still significant activity compared to a hypothetical dry-day baseline.</p>
+<p>By comparing pre/post rain periods while controlling for time trends, the analysis isolates the causal impact of precipitation on taxi demand. The results show that New Yorkers adapt their travel behavior to weather conditions by taking more taxi rides when there is precipitation compared to a hypothetical dry-day baseline.</p>
 <p>Explore the visualization to see how different weather intensities shift mobility patterns. Complete notebook and Streamlit app: <a href="https://github.com/legolego/milestone_1_streamlit" target="_blank">GitHub repo</a> | <a href="https://mads-592-milestone1-taxi-weather.streamlit.app" target="_blank">Interactive demo</a>.</p>
 <hr>
 <doc-anchor-target id="test-deepnote-to-streamlit">
