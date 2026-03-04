@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825894712335">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825898551126">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -33,12 +33,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.1.0.825894712335" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.825898551126" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825894712335" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825898551126" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825894712335" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.1.0.825894712335" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825898551126" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.1.0.825898551126" defer></script>
 
     <link href="static/custom.css" rel="stylesheet" />
 </head>
@@ -199,7 +199,7 @@ url: https://legolego.github.io/
 cname: false
 </code></pre>
 </doc-codeblock></div>
-<p>A simple demonstration that you can build beautiful static websites with minimal setup using <a href="https://retype.com/" target="_blank">Retype</a>. This site showcases how powerful documentation can be created entirely with Markdown — no complex frameworks required. The navigation is built-in and automatically generated based on file ordering.</p>
+<p>A simple demonstration that you can build beautiful static websites with minimal setup using <a href="https://retype.com/" target="_blank">Retype</a>. This site showcases how powerful documentation can be created entirely with Markdown, no complex frameworks required. The navigation is built-in and automatically generated based on file ordering.</p>
 <hr>
 <doc-anchor-target id="temperature-records-over-time">
     <h2>
@@ -213,7 +213,7 @@ cname: false
     </a>
     <figcaption class="caption"></figcaption>
 </figure>
-My first real adventure into data analysis with Jupyter notebooks! <span class="docs-emoji">&#x1F4C8;</span> I wanted to answer a deceptively simple question: how often do extreme temperature records get broken? The methodology was straightforward — download decades of historical weather data, calculate the probability of new record highs and lows each year, then visualize the trends over time.</p>
+My first real adventure into data analysis with Jupyter notebooks! <span class="docs-emoji">&#x1F4C8;</span> I wanted to answer a deceptively simple question: how often do extreme temperature records get broken? The methodology was straightforward: download decades of historical weather data, calculate the probability of new record highs and lows each year, then visualize the trends over time.</p>
 <p>The results were eye-opening. You can see in the visualization whether recent years have been unusually active with record-breaking temperatures or if we&#x27;re back to normal variability. Climate change enthusiasts and skeptics alike can look at the raw data for themselves.</p>
 <p>Full analysis and interactive notebook: <a href="https://github.com/legolego/WeatherRecords" target="_blank">GitHub repo</a></p>
 <hr>
@@ -232,7 +232,7 @@ for group in Lines01[:]:
     sum += len(set.intersection(*sets))</code></pre>
 </doc-codeblock></div>
 <p>The Advent of Code has been a yearly rite since ~2018! <span class="docs-emoji">&#x1F384;</span> These challenges combine clever algorithms, regex gymnastics, and creative problem-solving in Python. Each day presents a new puzzle inspired by real-world scenarios (navigation, cryptography, simulation games), forcing you to think outside the box. The code snippets here show my approach to set theory problems, but every year I tackle hundreds of lines worth across both days.</p>
-<p>My <a href="https://github.com/legolego/adventofcode2020" target="_blank">full collection of solutions</a> from that active competing year — a good time capsule showing how much I&#x27;ve learned since then! (And yes, I still compete occasionally.)</p>
+<p>My <a href="https://github.com/legolego/adventofcode2020" target="_blank">full collection of solutions</a> from that active competing year - a good time capsule showing how much I&#x27;ve learned since then! (And yes, I still compete occasionally.)</p>
 <hr>
 <doc-anchor-target id="pywekabayes">
     <h2>
@@ -242,7 +242,7 @@ for group in Lines01[:]:
 </doc-anchor-target>
 <div id="pywekabayes-code-1" class="codeblock-wrapper"><doc-codeblock line-numbers>
 <pre translate="no" class="language-python"><code v-pre class="language-python"># Choose trained Weka BIFXML file
-xmlfile = &quot;D:/weka/iris.xml&quot;    # created with BayesNet, MaxNrParents=2, BIFXML file
+xmlfile = &quot;D:/weka/iris.bif&quot;    # created with BayesNet, MaxNrParents=2, BIFXML file
 bifreader = JavaObject(JavaObject.new_instance(&quot;weka.classifiers.bayes.net.BIFReader&quot;))
 editable = Classifier(jobject=javbridge.make_instance(
                 &quot;weka/classifiers/bayes/net/EditableBayesNet&quot;,
@@ -255,7 +255,7 @@ marginCalc.jwrapper.calcMargins(editable.jobject)
 
 marginCalcNoEvidence = Serial.deepcopy(marginCalc)    # could maybe get by without this, just use marginCalc()</code></pre>
 </doc-codeblock></div>
-<p>This project explores Python&#x27;s Java Bridge capabilities to call Weka&#x27;s Bayesian Network classifiers directly. Using Weka&#x27;s BIFXML format — a compact XML representation of Bayesian networks created in the Weka GUI Chooser — we load trained models and compute attribute margins (Bayesian probabilities). This demonstrates how Python can leverage existing Java ML libraries without rewriting algorithms from scratch.</p>
+<p>This project explores Python&#x27;s Java Bridge capabilities to call Weka&#x27;s Bayesian Network classifiers directly. Using Weka&#x27;s BIFXML format - a compact XML representation of Bayesian networks created in the Weka GUI Chooser - we load trained models and compute attribute margins (Bayesian probabilities). This demonstrates how Python can leverage existing Java ML libraries without rewriting algorithms from scratch.</p>
 <p>The <a href="https://groups.google.com/g/python-weka-wrapper/c/qF4vw_6sqAA/m/EmqTph1NAAAJ" target="_blank">Weka Google Groups discussion</a> offers additional insights into building Bayesian networks with this approach.</p>
 
                 
